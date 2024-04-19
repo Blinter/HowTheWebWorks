@@ -76,6 +76,10 @@ This intercommunication cycle is widely relevant when browsing the internet usin
 ```bash
 curl -H "Accept: application/json" "https://icanhazdadjoke.com/search?term=pirate"
 ```
+Result
+```JSON
+{"current_page":1,"limit":20,"next_page":1,"previous_page":1,"results":[{"id":"QuscibaMClb","joke":"What does a pirate pay for his corn? A buccaneer!"},{"id":"2gii3LeN7Ed","joke":"Why couldn't the kid see the pirate movie? Because it was rated arrr!"},{"id":"SvzIBAQS0Dd","joke":"What did the pirate say on his 80th birthday? Aye Matey!"},{"id":"SnOf2gqjiqc","joke":"Why are pirates called pirates? Because they arrr!"},{"id":"exXSCtkOKe","joke":"Why do pirates not know the alphabet? They always get stuck at \"C\"."}],"search_term":"pirate","status":200,"total_jokes":5,"total_pages":1}
+```
 ---
 2. Use ***dig*** to find what the IP address is for *icanhazdadjoke.com*
 ```bash
