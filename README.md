@@ -14,7 +14,7 @@ Example:
 
 `What is DNS?`
 Domain Name System is a hierarchical and decentralized system for names on the internet. DNS works to resolve names to specific IP addresses or addresses on the internet, adding a layer of simplicity when it comes to specific addresses that point to a unique resource over the internet.
-DNS can also be used in differenet networks such as the Intranet, to provide localized resources to a subset network.
+DNS can also be used in different networks such as the Intranet, to provide localized resources to a subset network.
 
 `What is a query string?`
 A Query string is used to transmit other data to a server in a normal request using HTTP. It can start with either a "Forward Slash" (/) or a "Question Mark" (?) before additional parameters. The forward slash prefix may not be compatible with all implementations attempting to pass parameters.
