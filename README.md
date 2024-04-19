@@ -14,7 +14,7 @@ Example:
 
 `What is DNS?`
 Domain Name System is a hierarchical and decentralized system for names on the internet. DNS works to resolve names to specific IP addresses or addresses on the internet, adding a layer of simplicity when it comes to specific addresses that point to a unique resource over the internet.
-DNS can also be used in different networks such as the Intranet, to provide localized resources to a subset network.
+DNS can also be used in different networks such as the Intranet, to provide localized resources to a private or localized network.
 
 `What is a query string?`
 A Query string is used to transmit other data to a server in a normal request using HTTP. It can start with either a "Forward Slash" (/) or a "Question Mark" (?) before additional parameters. The forward slash prefix may not be compatible with all implementations attempting to pass parameters.
@@ -60,11 +60,11 @@ Header response headers may include:
 + The client must then take this data and create an HTTP GET request to send to a server, containing the path '/some/page.html' and other criteria such as the hostname that was used 'somesite.com'. Other details are also compiled into the header such as language preference, and acceptable response formats.
 
 + Based on the schema (http), it will use the HTTP protocol. The web browser then initiates a connection to the IP address which was resolved by the DNS server it queried, then send the request headers using the HTTP protocol.
-+ The server accepts the connection and then receives the HTTP request. It processes this data and creates an HTTP response, containing a Response Code, Response Header, and Response Body. The server then transmits this block of data back to the client using the HTTP connection that was created by the client's on the web browser I am using.
++ The server accepts the connection and then receives the HTTP request. It processes this data and creates an HTTP response, containing a Response Code, Response Header, and Response Body. The server then transmits this block of data back to the client using the HTTP connection that was created by the client's on the web browser.
 
-+ The web browser receives this HTTP Rseponse and interprets this data by verifying the status code, interpreting the header and body. The web browser further send more HTTP Requests to the server depending on other resources required.
++ The web browser receives this HTTP Response and interprets this data by verifying the status code, interpreting the header and body. The web browser further send more HTTP Requests to the server depending on other resources required.
 
-This intercommunication cycle is widely relevant when browsing the internet using the HTTP protocol.
+This intercommunication cycle is the normal cycle of operations when browsing the internet using the HTTP protocol.
 
 ---
 # Part 2
