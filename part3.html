@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+    <center>
+    <h1>How the Web Works</h1>
+    <hr>
+    <h5>Part 3 - Analyze Network data for POST and GET</h5>
+    <h5>Chrome -> (CTRL+SHIFT+I) Developer Tools -> Network -> Search Filter: "method:POST" -> "index.html?" -> Headers -> Response + Request Headers</h5>
+    <hr>
+    <form id="formID" action="part3.html" METHOD="GET" />
+        <input type="text" value="Sample Text" name="sampleTextSample" />
+        <input type="checkbox" name="checkBoxSample" checked />
+        <input type="submit" value="Send GET" />
+    </form>
+    <!-- Chrome -> (CTRL+SHIFT+I) Developer Tools -> Network -> Search Filter: "method:POST" -> "index.html?" -> Headers -> Response + Request Headers -->
+    <!-- Chrome -> (CTRL+SHIFT+I) Developer Tools -> Network -> Search Filter: "method:GET" -> "index.html?" -> Payload -> Query String Parameters -->
+    <hr>
+    <form id="formID2" action="part3.html" METHOD="POST" />
+        <input type="text" value="Sample Text" name="sampleTextSample" />
+        <input type="checkbox" name="checkBoxSample" checked />
+        <input type="submit" value="Send POST" />
+    </form>    
+    <hr>
+    <!-- Chrome -> (CTRL+SHIFT+I) Developer Tools -> Network -> Search Filter: "method:POST" -> "index.html?" -> Headers -> Response + Request Headers -->
+    <!-- Chrome -> (CTRL+SHIFT+I) Developer Tools -> Network -> Search Filter: "method:POST" -> "index.html?" -> Payload -> Query String Parameters -->
+</center>
+</body>
+
+</html>

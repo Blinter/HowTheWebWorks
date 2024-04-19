@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+    <center>
+    <h1>How the Web Works</h1>
+    <hr>
+    <h5>Part 4 - Analyze data through Javascript for POST and GET</h5>
+    <div class="result" style="background-color: gray;color: white;font-size: 12px;padding: 10px;text-align:center;">
+    <h1 id="type" style="background-color: black;color: white;padding: 10px;text-align:center;" for="type">NONE</h1>
+    <h3 style="margin-top: 10px;" for="RESULT">PARAMETERS RETURN</h3>
+    <div class="parametersList" >Waiting for input...</div>
+    </div>
+    <hr />
+    <form id="formID" action="part4.html" METHOD="GET" />
+        <input type="text" value="Sample Text" name="sampleTextSample" />
+        <input type="checkbox" name="checkBoxSample" checked />
+        <input type="submit" value="Send GET" />
+    </form>
+    <!-- Chrome -> (CTRL+SHIFT+I) Developer Tools -> Network -> Search Filter: "method:POST" -> "index.html?" -> Headers -> Response + Request Headers -->
+    <!-- Chrome -> (CTRL+SHIFT+I) Developer Tools -> Network -> Search Filter: "method:GET" -> "index.html?" -> Payload -> Query String Parameters -->
+    <hr />
+    <form id="formID2" />
+        <input class="postText" type="text" value="Sample Text" name="sampleTextSample" />
+        <input class="postCheckBox" type="checkbox" name="checkBoxSample" checked />
+        <input class="sendPost" type="submit" value="Send POST" />
+    </form>    
+    <br/>
+    <form>
+    <input class="clear" type="submit" value="CLEAR" /></form>
+    <!-- Chrome -> (CTRL+SHIFT+I) Developer Tools -> Network -> Search Filter: "method:POST" -> "index.html?" -> Headers -> Response + Request Headers -->
+    <!-- Chrome -> (CTRL+SHIFT+I) Developer Tools -> Network -> Search Filter: "method:POST" -> "index.html?" -> Payload -> Query String Parameters -->
+</center>
+</body>
+<script src="script.js"></script>
+</html>
