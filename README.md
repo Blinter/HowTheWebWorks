@@ -21,6 +21,8 @@ A Query string is used to transmit other data to a server in a normal request us
 
 After the prefix, data is generally transmitted through a "key-value" pair system, where delimiters in values such as `:/?#[]@!$%'()*+,;=` are not used in any of the key or value data attributes. Applications must convert these symbols to other values in order to be processed correctly. Multiple parameters are separated by an ampersand or the & symbol.
 
+There are special combinations of characters which are used to replace any restricted characters in the query parameter values. A `%20` usually replaces a space within a key-value pair, which helps the client and server interpret the same values that are transmitted. This triple character combination, called percent encoding, has special encoding and decoding rules to allow for proper communication between client and server. For further reference: `https://datatracker.ietf.org/doc/html/rfc3986#section-2.1` and `https://datatracker.ietf.org/doc/html/rfc3986#section-2.4`.
+
 A server will be able to interpret these "key-values" for further processing.
 
 `What are two HTTP verbs and how are they different?`
